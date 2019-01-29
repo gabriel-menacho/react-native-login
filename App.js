@@ -3,6 +3,21 @@ import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import AppNavigator from './navigation/AppNavigator';
 
+import Auth0 from 'react-native-auth0';
+
+//const auth0 = new Auth0({
+//  domain: 'react-native-login.auth0.com',
+//  clientId: 'CS9MoppaWtjivCmlfibn8vWzQAuQRBqv'
+//});
+//
+//auth0.webAuth
+//  .authorize({
+//    scope: 'openid email',
+//    audience: 'https://react-native-login.auth0.com/userinfo'
+//  })
+//  .then(console.log)
+//  .catch(error => console.log(error));
+
 export default class App extends React.Component {
   state = {
     isLoadingComplete: false
